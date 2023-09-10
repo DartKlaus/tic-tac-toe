@@ -79,9 +79,10 @@ while True:
     else:
         field[x][y] = 'О'
 
+    if win():
+        break
+    
     if n == 9:
         print("Ничья!")
         break
-
-    if win():
-        break
+    
